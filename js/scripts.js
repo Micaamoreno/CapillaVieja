@@ -25,7 +25,7 @@ $(function () {
         } else {
             $('.sticky-navigation').removeClass('navbar-light').addClass('navbar-dark').removeClass('bg-white').removeClass('navbar-shadow');
         }
-        
+
         // adjust scroll to top
         if (scroll >= 600) {
             $('.scroll-top').addClass('active');
@@ -34,7 +34,7 @@ $(function () {
         }
         return false;
     });
-    
+
      // slick slider
     $('.slick-about').slick({
         slidesToShow: 1,
@@ -48,16 +48,17 @@ $(function () {
     //timer init
     var upcoming = new Date();
 
+    upcoming.setDate(upcoming.getDate() + 60);
     upcoming.setDate(upcoming.getDate() + 10);
 
     $('.timer').countdown({
         date: upcoming,
         offset: +2,
-        día: 'día',
-        días: 'días'
+        day: 'Day',
+        days: 'Days'
     }, function () {
     });
-    
+
     // scroll top top
     $('.scroll-top').click(function () {
         $('html, body').stop().animate({
@@ -75,4 +76,5 @@ $(function () {
         $('.color-switcher ul li').removeClass('active');
         $(this).addClass('active');
     });
+});
 });
