@@ -48,7 +48,7 @@ $(function () {
     //timer init
     var upcoming = new Date();
 
-    upcoming.setDate(upcoming.getDate() + 60);
+    upcoming.setDate(upcoming.getDate() + 10);
 
     $('.timer').countdown({
         date: upcoming,
