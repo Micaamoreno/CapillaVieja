@@ -53,8 +53,8 @@ $(function () {
     $('.timer').countdown({
         date: upcoming,
         offset: +2,
-        day: 'día',
-        days: 'días'
+        día: 'día',
+        días: 'días'
     }, function () {
     });
     
